@@ -1,5 +1,5 @@
 import React from "react";
-import { FaMagento, FaTimes } from "react-icons/fa";
+import { FaMagento, FaTimes, FaSearch, FaBell } from "react-icons/fa";
 import "./App.scss";
 
 const App = () => {
@@ -54,7 +54,32 @@ const App = () => {
         </nav>
       </div>
       <div className="flex-1 min-w-0 bg-white">
-        <div className="border-b-2 border-gray-200"></div>
+        <div className="border-b-2 border-gray-200">
+          <header className="px-6">
+            <div className="flex justify-between items-center py-3 border-b border-gray-200">
+              <div className="flex-1">
+                <div className="relative w-64">
+                  <span className="absolute inset-y-0 left-0 pl-3 flex items-center">
+                    <FaSearch className="text-gray-600" />
+                  </span>
+                  <input
+                    className="block w-full rounded-md border border-gray-400 pl-12 pr-4 py-2 text-sm text-gray-900 placeholder-gray-600"
+                    placeholder="Search"
+                  />
+                </div>
+              </div>
+              <div className="flex items-center">
+                <button>
+                  <FaBell className="text-gray-500 h-5 w-5" />
+                </button>
+                <button className="ml-6">
+                  <img className="rounded-full" src="https://i.pravatar.cc/36" alt="user" />
+                </button>
+              </div>
+            </div>
+            <div></div>
+          </header>
+        </div>
         <div></div>
       </div>
     </div>
